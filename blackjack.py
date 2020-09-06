@@ -112,6 +112,9 @@ class Deck:
 '''   
 
 class Player():
+    """
+    This class is used to generate a Player.
+    """
     
     def __init__(self,name,chips):
         
@@ -120,15 +123,25 @@ class Player():
         self.bet = 0
         
     def __str__(self):
+        """
+        Printing a player Chips
+
+        """
         
         print_statement = 'Player {} has {} chips\n'.format(self.name,self.chips)
         return print_statement
     
     def add_chips(self,chips):
+        """
+        Adding Chips to the Player
+        """
         
         self.chips += chips
         
     def remove_chips(self,chips):
+        """
+        Removing Chips from the Player
+        """
         
         if chips > self.chips:
             print("Unsufficient Chips.")
@@ -143,6 +156,9 @@ class Player():
 '''  
 
 class Hand():
+    """
+    This class is used to generate a hand for the player and the dealer
+    """
     
     def __init__(self):
         
@@ -151,6 +167,9 @@ class Hand():
         self.ace_count = 0
         
     def __str__(self):
+        """
+        Printing a hand
+        """
         
         cards_in_hand = 'Card list is : \n'
         for x in range(len(self.cards)):
@@ -159,6 +178,9 @@ class Hand():
         return "This hand has a value of {}.\n\n".format(self.value) + cards_in_hand
     
     def add_card(self,card):
+        """
+        Adding a Card to a hand.
+        """
         
         self.cards.append(card)
         self.value += card.value
@@ -175,6 +197,9 @@ class Hand():
 '''  
 
 def take_bet(player):
+    """
+    Function to take a bet from the player.
+    """
     
     while True:
         
@@ -197,6 +222,11 @@ def take_bet(player):
 '''   
 
 def create_player():
+    """
+    Funtion to create a Player.
+    """
+
+
     global player
     
     while True:
@@ -222,6 +252,9 @@ def create_player():
 '''
 
 def adjust_winnings(winner):
+    """
+    Function to adjust chips at the End of the game.
+    """
     
     if winner == "player":
         player.chips += int(player.bet*1.5)
@@ -239,6 +272,9 @@ def adjust_winnings(winner):
 '''   
 
 def hit_or_stand(player_hand,deck_1):
+    """
+    Function to give Player a choice to HIT or STAND.
+    """
     
     global player_playing
     
@@ -271,6 +307,9 @@ def hit_or_stand(player_hand,deck_1):
 '''   
 
 def player_busted():
+    """
+    Final Winner : Dealer
+    """
     
     global winner
     
@@ -279,6 +318,9 @@ def player_busted():
     winner = "dealer"
 
 def dealer_busted():
+    """
+    Final Winner : Player
+    """
     
     global winner
     
@@ -287,6 +329,9 @@ def dealer_busted():
     winner = "player"
     
 def player_dealer_tie():
+    """
+    Final Winner : Tie
+    """
     
     global winner
     
@@ -294,6 +339,9 @@ def player_dealer_tie():
     winner = "tie"
     
 def player_wins():
+    """
+    Final Winner : Player
+    """
     
     global winner
     
@@ -301,6 +349,9 @@ def player_wins():
     winner = "player"
     
 def dealer_wins():
+    """
+    Final Winner : Dealer
+    """
     
     global winner
     
@@ -312,6 +363,9 @@ def dealer_wins():
 '''   
 
 def show_some_cards(player_hand, dealer_hand):
+    """
+    Function to show both hands while Hiding one of dealers Cards.
+    """
     
     print("\nPlayer Cards are : ")
     for card in player_hand.cards:
@@ -323,6 +377,9 @@ def show_some_cards(player_hand, dealer_hand):
     print("\n--------------------------------------------------------------------------------------------------------------------\n")
 
 def show_all_cards(player_hand, dealer_hand):
+    """
+    Function to show both hands
+    """
     
     print("\nPlayer Cards are : ")
     for card in player_hand.cards:
@@ -337,6 +394,9 @@ def show_all_cards(player_hand, dealer_hand):
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ''' 
 def main(player):
+    """
+    Starting the main game.
+    """
     
     #INITIALIZE A DECK OF CARDS AND SHUFFLE THEM.
     deck_1=Deck()
@@ -429,6 +489,9 @@ def main(player):
 ''' 
 
 def play_again():
+    """
+    Asking the Player to play again.
+    """
     
     while True:
         
