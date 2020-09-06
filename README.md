@@ -12,6 +12,8 @@ git clone https://github.com/radonintro1234/blackjack-python.git
 
 ## Usage
 
+###Terminal
+
 ```bash
 cd blackjack-python
 python blackjack.py
