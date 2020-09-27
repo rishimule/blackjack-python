@@ -21,7 +21,6 @@ python blackjack.py
 ## Preview
 
 <img src="https://raw.githubusercontent.com/radonintro1234/blackjack-python/master/Screenshots/1.png">
-<br>
 
 <img src="https://raw.githubusercontent.com/radonintro1234/blackjack-python/master/Screenshots/2.png">
 <br>
