@@ -12,7 +12,6 @@ git clone https://github.com/radonintro1234/blackjack-python.git
 
 ## Usage
 
-
 ```bash
 cd blackjack-python
 python blackjack.py
@@ -23,7 +22,6 @@ python blackjack.py
 <img src="https://raw.githubusercontent.com/radonintro1234/blackjack-python/master/Screenshots/1.png">
 
 <img src="https://raw.githubusercontent.com/radonintro1234/blackjack-python/master/Screenshots/2.png">
-<br>
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
