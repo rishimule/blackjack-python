@@ -7,14 +7,14 @@ A simple Blackjack game project coded in Python 3.8.
 Use the package manager [git](https://git-scm.com/) to install BlackJack.
 
 ```bash
-git clone https://github.com/radonintro1234/blackjack-python.git
+$ git clone https://github.com/radonintro1234/blackjack-python.git
 ```
 
 ## Usage
 
 ```bash
-cd blackjack-python
-python blackjack.py
+$ cd blackjack-python
+$ python blackjack.py
 ```
 
 ## Preview
